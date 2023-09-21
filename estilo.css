@@ -5,6 +5,33 @@ body{
     font-size: 1.2rem;
  
 }
+head{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+  transition: 0.5s linear;
+}
+.logo img{
+  width: 60px;
+}
+.nav{
+  display: flex;
+}
+
+.header-icon{
+  font-size: 22px ;
+  cursor: pointer;
+  z-index: 1000;
+  display: right;
+  column-gap: 0.5rem;
+
+}
+
 .col1{
     width: 7%;
     text-align: right;
@@ -90,19 +117,19 @@ body{
     border-right:1px solid #c0c0c0;
 }
 .menu li a{
-    color:#ffffff; text-decoration:none; padding:5px 10px; display:block;
+    color:#ffffff; text-decoration:none; padding:5px 15px; display:flex;
 }
 
 .menu li a:hover{
     background:#333;
     color:#fff;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -moz-box-shadow:0 3px 15px 0 #CCC;
     -webkit-box-shadow:0 3px 10px 0 #ccc;
     text-shadow:0px 0px 5px #fff;
 }
 .menu li  ul{
     position:absolute;
-    top:25px;
+    top:20px;
     left:0;
     background-color:#4e4e4e;
     display:none;
@@ -110,8 +137,29 @@ body{
 .menu li:hover ul, .menu li.over ul{display:block;}
 .menu li ul li{
     border:1px solid #c0c0c0;
-    display:block;
+    display:none;
     width:150px;
+}
+.about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+  align-items: center;
+  gap: 5rem;
+  margin-top: -25%;
+  top: 20%;
+}
+.about-img img{
+  border-radius: 0.5rem; 
+}
+.about-text h2{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.about-text p{
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.1rem;
+
+
 }
 img{
     max-width: 100%;
@@ -131,8 +179,9 @@ img{
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,.3);
     color: #333;
-    margin-top: -120%;
+    margin-top: 25%;
   }
+  
   .img{
     width: 100%;
   }
@@ -157,6 +206,7 @@ img{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+    margin-top: 10px;
   }
  
 *,
@@ -189,7 +239,7 @@ html {
 
 @media (min-width: 2560px) {
   html {
-    zoom: 1.7;
+    zoom: 1.2;
   }
 }
 
@@ -245,7 +295,7 @@ html {
 
 #tranding .tranding-slider {
   height: 52rem;
-  padding: 2rem 0;
+  padding: 6rem 0;
   position: relative;
 }
 
