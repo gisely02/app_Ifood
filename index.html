@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIl cafeteria</title>
-    <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="./img/logo cafe.jpg" type="" >
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <body>
     <reader>
-        <a href="#" class="logo">
-          <img src="./img/logo café.jpg" alt="">
-        </a>
-        
+    
+      <div class="container-user">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <div class="content-shopping-cart">
+          <span class="text">Carrito</span>
+          <span class="number">(0)</span>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
         <div class="parte2 col5">
             <nav>
@@ -47,8 +54,10 @@
         </div>
     </reader>
 
+   
     <main>
-    <section class="about" id="about">
+    
+      <section class="about" id="about">
         <div class="about -img">
           <img src="./img/capucino_trufado.jpg" alt="">
         </div>
@@ -63,32 +72,27 @@
    
     <div class="layout col-view">
       <div class="container">
-        <h1 class="text-center section-heading">Categorias</h1>
         
-      <div class="articles-list">
-        <article class="article">
-          <img class="article-img"  src="./img/cafe3.jpg" alt="">
-          <div class="article-content">
-            <h2 class="article-title"> Bebidas</h2>
-            <button class="botão"> Para saber mais </button>
-          </div>
-        </article>
-        <article class="article">
-          <img class="article-img"  src="./img/doces-de-casamento-1.jpg" alt="">
-          <div class="article-content">
-            <h2 class="article-title"> Bebidas</h2>
-            <button class="botão"> Para saber mais </button>
-          </div>
-        </article>
-        <article class="article">
-          <img class="article-img"  src="./img/livros para a cafeteria.png" alt="">
-          <div class="article-content">
-            <h2 class="article-title"> Bebidas</h2>
-            <button class="botão"> Para saber mais </button>
-          </div>
-        </article>
+    <section class="container top-categories">
+      <h1 class="text-center section-heading">Categorias</h1>
+      <div class="container-categories">
+        <div class="card-category category-livros">
+          <p>Livros</p>
+          <span>Ver mais</span>
+        </div>
+        <div class="card-category category-doces">
+          <p>Doces</p>
+          <span>Ver mais</span>
+        </div>
+        <div class="card-category category-cafe">
+          <p>Cafés</p>
+          <span>Ver mais</span>
+        </div>
       </div>
-    </div>
+    </section>
+
+
+  
          
     <section id="tranding">
        <div class="container">
@@ -281,14 +285,31 @@
         </div>
       </div>
     </section>
+  
+    
 
+
+    <section class="about1" id="about1">
+      <div class="about -img1">
+        <img src="./img/doces-de-casamento-1.jpg"alt="">
+      </div>
+      <div class="about-text1">
+        <h1>Conheça nosso cardápio</h1>
+        <p>Somos para todos os momentos! Opções de café da manhã, almoço, cafés, doces, lanches, happy hour e jantar.</p>
+        <a href="#" class="botão"> Espiar agora </a>
+      </div>
+  </section>
 
   
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   </main>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-   </main>
+
+
+    <footer>
+
+    </footer>
 </body>
 </html>
