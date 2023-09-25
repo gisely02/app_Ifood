@@ -14,7 +14,7 @@ body{
 
 .col1{
     width: 7%;
-    text-align: right;
+    text-align: center;
 }
 .col2{
     width: 14%;
@@ -80,47 +80,68 @@ body{
     text-align:left;
     top: 40%; 
 }
-.banner .content h1{
-    padding: 0;
-    font-size: 6.6em;
-    text-transform: uppercase;
-    color: #ffff;
+.banner .content p{
+  border-radius: var(--white);
+    margin-top: -90%;
+    margin-left: -360%;
+    padding: 15%;
+    font-size: 4.6em;
+    text-transform:uppercase;
+    color: #9C5D41;
     float: right;
-}
-.menu{
-    list-style:none;
-    border:1px solid #c0c0c0;
-    float:left;
-}
-.menu li{
-    position:relative;
-    float:left;
-    border-right:1px solid #c0c0c0;
-}
-.menu li a{
-    color:#ffffff; text-decoration:none; padding:5px 15px; display:flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 
-.menu li a:hover{
-    background:#333;
-    color:#fff;
-    -moz-box-shadow:0 3px 15px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;
+a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.menu li  ul{
-    position:absolute;
-    top:20px;
-    left:0;
-    background-color:#4e4e4e;
-    display:none;
+a:hover{
+  opacity: 0.7;
 }
-.menu li:hover ul, .menu li.over ul{display:block;}
-.menu li ul li{
-    border:1px solid #c0c0c0;
-    display:none;
-    width:150px;
+.logo{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0);
+}
+
+.lista{
+  list-style: none;
+  display: flex;
+}
+.lista li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+  color: white;
+
+
+}
+.mobile-menu{
+  cursor: pointer;
+  display: none;
+
+}
+
+  
+.mobile-menu div{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+
+}
+
 .container-features {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -156,8 +177,7 @@ img{
     max-width: 100%;
 }
   .botão {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color:#9C5D41;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -199,7 +219,7 @@ img{
     background-repeat: no-repeat;
   }
   
-  .category-doces {
+  .category-cafe {
     background-image: linear-gradient(#00000080, #00000080),
       url('img/cafe3.jpg');
     background-size: cover;
@@ -207,7 +227,7 @@ img{
     background-repeat: no-repeat;
   }
   
-  .category-cafe {
+  .category-doces {
     background-image: linear-gradient(#00000080, #00000080),
       url('img/doces-de-casamento-1.jpg ');
     background-size: cover;
@@ -481,7 +501,7 @@ html {
   align-items: center;
   gap: 5rem;
   margin-top: 100px;
-  top: 30%;
+  top: -40%;
 }
 .about-img1 img{
   border-radius: 1.7rem;
@@ -491,11 +511,43 @@ html {
 .about-text1 h1{
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-top: -20%;
+  margin-top: -15%;
  
 }
 .about-text1 p{
   font-size: 0.938rem;
   margin: 0.5rem 0 1.1rem;
 
+}
+
+footer{
+  background-color: #CBA692;
+
+}
+footer .container{
+  margin-top: 10%;
+  display: flex;
+  color: white;
+
+}
+footer .container ul{
+  width: 25%;
+}
+footer .container h3{
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+footer .container ul > p{
+  margin-bottom: 40px;
+}
+footer .container li{
+  margin: 10px 0;
+}
+footer .container a{
+ color: white;
+}
+@media (max-width:450px) {
+  footer .container  {
+    flex-direction: column;
+  }
 }
