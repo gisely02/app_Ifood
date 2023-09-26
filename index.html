@@ -11,23 +11,23 @@
     
 </head>
 <body>
-
   <nav>
-    <a class="logo" href="/"> Gil Cafeteria</a>
-    <div class="mobile-menu">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-      
+    <div class="logo"> Gil Cafeteria</div>
+
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
     </div>
+
     <ul class="lista">
-      <li><a href="#"></a>home</li>
-      <li><a href="#"></a>sobre</li>
-      <li><a href="#"></a>Cardapio</li>
-      <li><a href="#"></a>categoria</li>
-      <li><a href="#"></a>contato</li>
-  </ul>
-  </nav>
+        <li> <a href="#" class="active"> Home </a> </li>
+        <li> <a href="sobre.html"> Sobre</a> </li>
+        <li> <a href="cardapio.html"> Cardápio</a> </li>
+        <li> <a href="#"> Mais Vendidos</a> </li>
+        <li> <a href="#"> Contato</a> </li>
+    </ul>
+</nav>
+<script src="main.js"></script>
+  
     <reader>
       <div class="banner">
         <video autoplay muted loop>
@@ -65,15 +65,15 @@
       <div class="container-categories">
         <div class="card-category category-livros">
           <p>Livros</p>
-          <span>Ver mais</span>
+         <a href="cardapio.html">Ver mais</a>
         </div>
         <div class="card-category category-doces">
           <p>Doces</p>
-          <span>Ver mais</span>
+          <a href="cardapio.html">Ver mais</a>
         </div>
         <div class="card-category category-cafe">
           <p>Cafés</p>
-          <span>Ver mais</span>
+          <a href="cardapio.html">Ver mais</a>
         </div>
       </div>
     </section>
@@ -283,7 +283,7 @@
       <div class="about-text1">
         <h1>Conheça nosso cardápio</h1>
         <p>Somos para todos os momentos! Opções de café da manhã, almoço, cafés, doces, lanches, happy hour e jantar.</p>
-        <a href="#" class="botão"> Espiar agora </a>
+        <a href="cardapio.html" class="botão"> Espiar agora </a>
       </div>
   </section>
 
@@ -306,8 +306,8 @@
         <ul>
           <h3>link</h3>
           <li><a href="#">home</a></li>
-          <li><a href="#">sobre</a></li>
-          <li><a href="#">cardápio</a></li>
+          <li><a href="sobre.html">sobre</a></li>
+          <li><a href="cardapio.html">cardápio</a></li>
           <li><a href="#">Mais vendidos</a></li>
         </ul>
         <ul>

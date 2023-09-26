@@ -106,6 +106,7 @@ a:hover{
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
 }
 nav{
   display: flex;
@@ -124,8 +125,16 @@ nav{
   letter-spacing: 3px;
   margin-left: 32px;
   color: white;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
 
-
+nav .menu-btn i{
+  color: #fff;
+  cursor: pointer;
+  display: none;
 }
 .mobile-menu{
   cursor: pointer;

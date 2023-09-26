@@ -20,26 +20,13 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
   });
 
-  class MobileNavbar {
-    constructor(mobileMenu, lista) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.lista = document.querySelector(lista);
-      this.activeClass = "active";
-  
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-  
-    init() {
-      if (this.mobileMenu) {
-      }
-      return this;
+  var ul = document.querySelector('nav ul');
+  var menuBtn = document.querySelector('.menu-btn i');
+
+  function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
     }
   }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
