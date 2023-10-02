@@ -4,19 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <style>
-img{
-    margin-top: 10%;
-    margin-left: 35%;
+    body{
+        background-color:antiquewhite;
+        width: 84%;
+         margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    .tabelas{
+        display: block;
+    }
+    h2{
+        font-size: 6.6mm;
+        margin-top: 5%;
+  
+    }
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    th, td {
+    padding: 8px;
+     text-align: left;
+    border-bottom: 1px solid #DDD;
+    }
+
+    tr:hover {background-color: #D6EEEE;}
+
+    img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100px;
+    height: 100px;
+    }
+    .imagem_topo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-top: 0;
 }
-p{
-    font-size: 9.9mm;
-    margin-left: 40%;
-}
+   
+   
 </style>
 <body>
-    <img src="./img/construcao.webp" alt="contrucao">
-    <p>Página em construção</p>
+
+    <reader>
+        <nav>
+            <div class="logo"> Gil Cafeteria</div>
+        
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+        
+            <ul class="lista">
+                <li> <a href="#" class="active"> Home </a> </li>
+                <li> <a href="sobre.html"> Sobre</a> </li>
+                <li> <a href="cardapio.html"> Cardápio</a> </li>
+                <li> <a href="#"> Mais Vendidos</a> </li>
+                <li> <a href="#"> Contato</a> </li>
+            </ul>
+        </nav>
+
+        <div class="imagem_topo"><img src="./img/Captura de tela 2023-10-02 111041.png" alt=""></div>
+
+
+    </reader>
+
+    <main>
+    <div class="tabelas">
+        <table>
+             <thead>
+                <h2>Cafés clássicos</h2>
+             </thead>
+             <tbody>
+                <tr>
+                    <th></th>
+                    <th>Produtos</th>
+                    <th>Desccrição</th>
+                    <th>Preço</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="1"><img src="./img/we-coffee-cafe-espresso-800x800.png" alt=""></td>
+                    <td>café expresso</td>
+                    <td>Encorpado com notas de castanhas e chocolate meio-amargo. 30ml</td>
+                    <td>$6,50</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1"><img src="./img/we-coffee-cafe-sss-800x800.png" alt=""></td>
+                    <td>cappuccino</td>
+                    <td>Estilo Italiano. Espresso duplo, Leite e Crema. 360ml</td>
+                    <td>$16,00</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1"><img src="./img/we-coffee-cafe-americano-800x800.png" alt=""></td>
+                    <td>Americano</td>
+                    <td>Espresso duplo, suavizado com água. Encorpado com notas de castanhas e chocolate meio-amargo. 360ml</td>
+                    <td>$9,50</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1"><img src="./img/we-coffee-cafe-cappuccino-qeunte-800x800.png" alt=""></td>
+                    <td>Mocha</td>
+                    <td>Espresso duplo, leite e ganache de chocolate. 360ml</td>
+                    <td>$17,50</td>
+                  </tr>
+             </tbody>
+        </table>
+    </div>
+    </main>
+   
 </body>
 </html>
