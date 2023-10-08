@@ -6,7 +6,7 @@ if(modo == '1'):
        texto = input("Insira um texto para criptografar: ")
 
        for i in range (0, len(texto)):
-           resultado = resultado + chr(ord(texto[i]) + 2)
+           resultado = resultado + chr(ord(texto[i]) + 1)
            print(resultado)
            resultado = ''
 
@@ -15,6 +15,6 @@ if(modo == '2'):
       texto = input("Insira um texto para descriptografar: ")
 
       for i in range (0, len(texto)):
-            resultado = resultado + chr(ord(texto[i]) - 2)
+            resultado = resultado + chr(ord(texto[i]) - 1)
             print(resultado)
             resultado = ''
