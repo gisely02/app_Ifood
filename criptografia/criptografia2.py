@@ -1,7 +1,7 @@
 MODE_ENCRYPT = 1
 MODE_DECRYPT = 0
 
-def caesar(data, key, mode):
+def cipher(data, key, mode):
     alphabet = 'abcdefghijklmnopqrstuvwyzàáãâéêóôõíúçABCDEFGHIJKLMNOPQRSTUVWYZÀÁÃÂÉÊÓÕÍÚÇ'
     new_data = ''
     for c in data:
@@ -13,11 +13,13 @@ def caesar(data, key, mode):
             new_index = new_index % len(alphabet)
             new_data += alphabet[new_index:new_index+1]
     return new_data
+	
 input(" escolha um intervalo: ")
 input("escreva uma frase: ")
-ciphered = caesar(original, key, MODE_ENCRYPT)
+
+ciphered = cipher(input, key, MODE_ENCRYPT)
 print('Encriptada:', ciphered)
-plain = caesar(ciphered, key, MODE_DECRYPT)
+plain = cipher(ciphered, key, MODE_DECRYPT)
 print('Decriptada:', plain)
 
 
