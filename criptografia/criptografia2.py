@@ -14,7 +14,7 @@ def cipher(data, key, mode):
             new_data += alphabet[new_index:new_index+1]
     return new_data
 	
-input(" escolha um intervalo: ")
+key = 5
 input("escreva uma frase: ")
 
 ciphered = cipher(input, key, MODE_ENCRYPT)
